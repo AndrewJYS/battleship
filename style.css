@@ -1,0 +1,81 @@
+body {
+	background-color: black;
+}
+
+div#board {
+	position: relative;
+	width: 1024px;
+	height: 863px;
+	margin: auto;
+	background: url("imgs/board.jpg") no-repeat;
+}
+div#messageArea {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	color: rgb(83, 175, 19);
+    font-size: 32px;
+}
+div#missileLeft {
+    position: absolute;
+	top: 0px;
+	right: 0px;
+	color: rgb(83, 175, 19);
+    font-size: 32px;
+}
+
+.hit {
+	background: url("imgs/ship.png") no-repeat center center;
+}
+.miss {
+	background: url("imgs/miss.png") no-repeat center center;
+}
+table {
+	border-spacing: 0px; 
+	/* could use border-collapse instead */
+	/* border-collapse: collapse; */
+	position: absolute;
+	left: 173px;
+	top: 98px;
+
+}
+input {
+	width: 94px;
+	height: 93px;
+	background:rgba(130, 32, 32, 0);
+	border: 0px;
+	margin: 0px 2px 0px 0px;
+	padding: 0px;
+}
+td {
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+}
+
+form {
+	position: absolute;
+    margin: auto;
+	padding: 15px;
+	background-color: rgb(83, 175, 19);
+}
+form input {
+    width: 250px;
+	height: 30px;
+
+
+	background-color: rgb(152, 207, 113);
+	border-color: rgb(83, 175, 19);
+	font-size: 1em;
+}
+
+
+.explode {
+	height: 0px;
+	width: 0px;
+	
+}
+.miss {
+	height: 0px;
+	width: 0px;
+}
